@@ -207,9 +207,31 @@ namespace EcigikApp
                 DataGridViewCell tipusCell = new DataGridViewTextBoxCell();
                 sorszamCell.Value = recordsEcigikList[i].Tipus;
                 dataGridViewRow.Cells.Add(tipusCell);
+
+                dataGridViewRows[i] = dataGridViewRow;
             }
+
+            dgwEcigik.Rows.Clear();
+            dgwEcigik.Rows.AddRange(dataGridViewRows);
         }
 
+        private void tb_Sorszam_Leave(object sender,EventArgs e)
+        {
+            string actualCode = tbSorszam.Text;
+            bool correct = TableManager.CheckSorszam(actualCode);
+            tbSorszam.BackColor = correct ? Color.White : Color.Yellow;
 
+        }
+        private void tb_Nev_Leave(object sender, EventArgs e)
+        {
+            string actualCode = tbNev.Text;
+            bool correct = TableManager.CheckNev(actualCode);
+            tbNev.BackColor = correct ? Color.White : Color.Yellow;
+        }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            bgWorker.RunWorkerAsync();
+        }
     }
 }

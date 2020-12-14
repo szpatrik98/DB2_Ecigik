@@ -58,6 +58,7 @@
             this.tbNev.Size = new System.Drawing.Size(320, 22);
             this.tbNev.TabIndex = 1;
             this.tbNev.Text = "Nev";
+            this.tbNev.Leave += new System.EventHandler(this.tb_Nev_Leave);
             // 
             // tbWatt
             // 
@@ -110,6 +111,7 @@
             this.tbSorszam.Size = new System.Drawing.Size(320, 22);
             this.tbSorszam.TabIndex = 11;
             this.tbSorszam.Text = "Sorszam";
+            this.tbSorszam.Leave += new System.EventHandler(this.tb_Sorszam_Leave);
             // 
             // tbGyarto
             // 
@@ -145,6 +147,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Shown += new System.EventHandler(this.Form1_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.dgwEcigik)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
