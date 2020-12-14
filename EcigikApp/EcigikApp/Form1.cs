@@ -56,7 +56,7 @@ namespace EcigikApp
                 Sorszam = tbSorszam.Text,
                 Nev = tbNev.Text,
                 Szin = cbSzin.SelectedItem.ToString(),
-                Gyarto = tbGyarto.Text,
+                Marka = tbMarka.Text,
                 Watt = int.Parse(tbWatt.Text),
                 Megjelenesev = dtp_MegjelenesEv.Value,
                 Tipus = tbTipus.Text
@@ -67,7 +67,7 @@ namespace EcigikApp
             MessageBox.Show("Sikeres feltöltés.");
             tbSorszam.Clear();
             tbNev.Clear();
-            tbGyarto.Clear();
+            tbMarka.Clear();
             tbWatt.Clear();
             tbTipus.Clear();
         }
@@ -192,9 +192,9 @@ namespace EcigikApp
                 sorszamCell.Value = recordsEcigikList[i].Szin;
                 dataGridViewRow.Cells.Add(szinCell);
 
-                DataGridViewCell gyartoCell = new DataGridViewTextBoxCell();
-                sorszamCell.Value = recordsEcigikList[i].Gyarto;
-                dataGridViewRow.Cells.Add(gyartoCell);
+                DataGridViewCell markaCell = new DataGridViewTextBoxCell();
+                sorszamCell.Value = recordsEcigikList[i].Marka;
+                dataGridViewRow.Cells.Add(markaCell);
 
                 DataGridViewCell wattCell = new DataGridViewTextBoxCell();
                 sorszamCell.Value = recordsEcigikList[i].Watt;

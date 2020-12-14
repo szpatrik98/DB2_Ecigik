@@ -73,9 +73,9 @@ namespace EcigikApp.Models.Records
                 return szin;
             }
         }
-        private string gyarto;
+        private string marka;
 
-        public string Gyarto
+        public string Marka
         {
             set
             {
@@ -87,11 +87,11 @@ namespace EcigikApp.Models.Records
                 {
                     throw new TooMuchExc("Much");
                 }
-                gyarto = value;
+                marka = value;
             }
             get
             {
-                return gyarto;
+                return marka;
             }
         }
         private int watt;

@@ -29,8 +29,8 @@ namespace EcigikApp.Models.Manager
             OracleCommand command = new OracleCommand()
             {
                 CommandType = System.Data.CommandType.Text,
-                CommandText = "SELECT gy.nev, a.sorszam FROM " +
-                " ecigik e INNER JOIN gyartok gy ON gy.id = e.gyarto_id"
+                CommandText = "SELECT m.nev, a.sorszam FROM " +
+                " ecigik e INNER JOIN markak m ON m.id = e.marka_id"
             };
 
             command.Connection = oc;
@@ -40,7 +40,7 @@ namespace EcigikApp.Models.Manager
             {
                 Ecigik ecigi = new Ecigik();
                 ecigi.Sorszam = reader["sorszam"].ToString();               
-                ecigi.Gyarto = reader["nev"].ToString();
+                ecigi.Marka = reader["nev"].ToString();
 
                 records.Add(ecigi);
             }
@@ -132,14 +132,14 @@ namespace EcigikApp.Models.Manager
             };
             command.Parameters.Add(szinParameter);
 
-            OracleParameter gyartoParameter = new OracleParameter()
+            OracleParameter markaParameter = new OracleParameter()
             {
                 DbType = System.Data.DbType.String,
-                ParameterName = "p_gyarto",
+                ParameterName = "p_marka",
                 Direction = System.Data.ParameterDirection.Input,
-                Value = record.Gyarto
+                Value = record.Marka
             };
-            command.Parameters.Add(gyartoParameter);
+            command.Parameters.Add(markaParameter);
 
             OracleParameter wattParameter = new OracleParameter()
             {

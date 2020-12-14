@@ -36,7 +36,7 @@
             this.dtp_MegjelenesEv = new System.Windows.Forms.DateTimePicker();
             this.cbSzin = new System.Windows.Forms.ComboBox();
             this.tbSorszam = new System.Windows.Forms.TextBox();
-            this.tbGyarto = new System.Windows.Forms.TextBox();
+            this.tbMarka = new System.Windows.Forms.TextBox();
             this.tbTipus = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.dgwEcigik)).BeginInit();
@@ -114,13 +114,13 @@
             this.tbSorszam.Text = "Sorszam";
             this.tbSorszam.Leave += new System.EventHandler(this.tb_Sorszam_Leave);
             // 
-            // tbGyarto
+            // tbMarka
             // 
-            this.tbGyarto.Location = new System.Drawing.Point(701, 410);
-            this.tbGyarto.Name = "tbGyarto";
-            this.tbGyarto.Size = new System.Drawing.Size(320, 22);
-            this.tbGyarto.TabIndex = 12;
-            this.tbGyarto.Text = "Gyarto";
+            this.tbMarka.Location = new System.Drawing.Point(701, 410);
+            this.tbMarka.Name = "tbMarka";
+            this.tbMarka.Size = new System.Drawing.Size(320, 22);
+            this.tbMarka.TabIndex = 12;
+            this.tbMarka.Text = "Marka";
             // 
             // tbTipus
             // 
@@ -141,7 +141,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1271, 603);
             this.Controls.Add(this.tbTipus);
-            this.Controls.Add(this.tbGyarto);
+            this.Controls.Add(this.tbMarka);
             this.Controls.Add(this.tbSorszam);
             this.Controls.Add(this.cbSzin);
             this.Controls.Add(this.dtp_MegjelenesEv);
@@ -170,7 +170,7 @@
         private System.Windows.Forms.DateTimePicker dtp_MegjelenesEv;
         private System.Windows.Forms.ComboBox cbSzin;
         private System.Windows.Forms.TextBox tbSorszam;
-        private System.Windows.Forms.TextBox tbGyarto;
+        private System.Windows.Forms.TextBox tbMarka;
         private System.Windows.Forms.TextBox tbTipus;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
