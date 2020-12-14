@@ -1,0 +1,11 @@
+C:\Users\szabb\Documents\GitHub\DB2_Ecigik\EcigikApp\EcigikApp\obj\Debug\EcigikApp.csprojAssemblyReference.cache
+C:\Users\szabb\Documents\GitHub\DB2_Ecigik\EcigikApp\EcigikApp\obj\Debug\EcigikApp.Form1.resources
+C:\Users\szabb\Documents\GitHub\DB2_Ecigik\EcigikApp\EcigikApp\obj\Debug\EcigikApp.Properties.Resources.resources
+C:\Users\szabb\Documents\GitHub\DB2_Ecigik\EcigikApp\EcigikApp\obj\Debug\EcigikApp.csproj.GenerateResource.cache
+C:\Users\szabb\Documents\GitHub\DB2_Ecigik\EcigikApp\EcigikApp\bin\Debug\EcigikApp.exe.config
+C:\Users\szabb\Documents\GitHub\DB2_Ecigik\EcigikApp\EcigikApp\bin\Debug\EcigikApp.exe
+C:\Users\szabb\Documents\GitHub\DB2_Ecigik\EcigikApp\EcigikApp\bin\Debug\EcigikApp.pdb
+C:\Users\szabb\Documents\GitHub\DB2_Ecigik\EcigikApp\EcigikApp\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\szabb\Documents\GitHub\DB2_Ecigik\EcigikApp\EcigikApp\obj\Debug\EcigikApp.csproj.CopyComplete
+C:\Users\szabb\Documents\GitHub\DB2_Ecigik\EcigikApp\EcigikApp\obj\Debug\EcigikApp.exe
+C:\Users\szabb\Documents\GitHub\DB2_Ecigik\EcigikApp\EcigikApp\obj\Debug\EcigikApp.pdb
