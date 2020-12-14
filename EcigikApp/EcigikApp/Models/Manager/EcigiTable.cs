@@ -153,7 +153,7 @@ namespace EcigikApp.Models.Manager
             OracleParameter megjeleneseveParameter = new OracleParameter()
             {
                 DbType = System.Data.DbType.String,
-                ParameterName = "p_evjarat",
+                ParameterName = "p_megjelenesev",
                 Direction = System.Data.ParameterDirection.Input,
                 Value = record.Megjelenesev
             };
