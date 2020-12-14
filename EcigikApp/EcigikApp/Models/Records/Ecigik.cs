@@ -94,5 +94,52 @@ namespace EcigikApp.Models.Records
                 return gyarto;
             }
         }
+        private int watt;
+        public int Watt
+        {
+            set
+            {
+                if (value == null)
+                {
+                    throw new NullREcordExc("Null");
+                }
+                watt = value;
+            }
+            get
+            {
+                return watt;
+            }
+        }
+        private string tipus;
+
+        public string Tipus
+        {
+            set
+            {
+                if (value == null)
+                {
+                    throw new NullREcordExc("Null");
+                }
+                tipus = value;
+            }
+            get
+            {
+                return tipus;
+            }
+
+        }
+        private DateTime megjelenesev;
+
+        public DateTime Megjelenesev
+        {
+            set
+            {
+                megjelenesev = value;
+            }
+            get
+            {
+                return megjelenesev;
+            }
+        }
     }
 }
