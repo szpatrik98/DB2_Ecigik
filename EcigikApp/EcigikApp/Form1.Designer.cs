@@ -38,6 +38,7 @@
             this.tbSorszam = new System.Windows.Forms.TextBox();
             this.tbGyarto = new System.Windows.Forms.TextBox();
             this.tbTipus = new System.Windows.Forms.TextBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.dgwEcigik)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,6 +130,11 @@
             this.tbTipus.TabIndex = 13;
             this.tbTipus.Text = "Tipus";
             // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgWroker_DoWork);
+            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgWroker_RunWorkerComplete);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -166,6 +172,7 @@
         private System.Windows.Forms.TextBox tbSorszam;
         private System.Windows.Forms.TextBox tbGyarto;
         private System.Windows.Forms.TextBox tbTipus;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 
