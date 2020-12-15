@@ -17,7 +17,7 @@ begin
        
         while v_i <= 6 loop
             v_sorszam_char := substr(v_sorszam_char, v_i, 1);
-            if not (ascii('0') <= ascii(v_sorszam_char) and ascii(v_sorszam_char) <= ascii('9') and (ascii('A') <= ascii(v_rendszam_char) and ascii(v_rendszam_char) <= ascii('Z'))) then
+            if not (ascii('0') <= ascii(v_sorszam_char) and ascii(v_sorszam_char) <= ascii('9') and (ascii('A') <= ascii(v_sorszam_char) and ascii(v_sorszam_char) <= ascii('Z'))) then
                 return 0;            
             end if;
             v_i := v_i + 1;
