@@ -14,7 +14,7 @@ namespace EcigikApp.Models.Manager
         {
             OracleConnection oc = new OracleConnection();
 
-            string connectionString = @"Data Source=193.225.33.71;User Id=ORA_S1340;Password=EKE2020;";
+            string connectionString = @"Data Source=193.225.33.71;User Id=AI18MZ;Password=EKE2020;";
             oc.ConnectionString = connectionString;
             return oc;
         }
@@ -29,7 +29,7 @@ namespace EcigikApp.Models.Manager
             OracleCommand command = new OracleCommand()
             {
                 CommandType = System.Data.CommandType.Text,
-                CommandText = "SELECT m.nev, a.sorszam FROM " +
+                CommandText = "SELECT m.nev, e.sorszam FROM " +
                 " ecigik e INNER JOIN markak m ON m.id = e.marka_id"
             };
 

@@ -44,17 +44,20 @@
             // 
             // dgwEcigik
             // 
+            this.dgwEcigik.AllowUserToAddRows = false;
+            this.dgwEcigik.AllowUserToDeleteRows = false;
             this.dgwEcigik.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwEcigik.Location = new System.Drawing.Point(12, 12);
+            this.dgwEcigik.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgwEcigik.Location = new System.Drawing.Point(13, 13);
             this.dgwEcigik.Name = "dgwEcigik";
             this.dgwEcigik.RowHeadersWidth = 51;
-            this.dgwEcigik.RowTemplate.Height = 24;
-            this.dgwEcigik.Size = new System.Drawing.Size(1247, 390);
+            this.dgwEcigik.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgwEcigik.Size = new System.Drawing.Size(574, 237);
             this.dgwEcigik.TabIndex = 0;
             // 
             // tbNev
             // 
-            this.tbNev.Location = new System.Drawing.Point(338, 410);
+            this.tbNev.Location = new System.Drawing.Point(593, 110);
             this.tbNev.Name = "tbNev";
             this.tbNev.Size = new System.Drawing.Size(320, 22);
             this.tbNev.TabIndex = 1;
@@ -63,7 +66,7 @@
             // 
             // tbWatt
             // 
-            this.tbWatt.Location = new System.Drawing.Point(12, 438);
+            this.tbWatt.Location = new System.Drawing.Point(593, 201);
             this.tbWatt.Name = "tbWatt";
             this.tbWatt.Size = new System.Drawing.Size(320, 22);
             this.tbWatt.TabIndex = 3;
@@ -71,7 +74,7 @@
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(1051, 418);
+            this.btnInsert.Location = new System.Drawing.Point(662, 13);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(148, 63);
             this.btnInsert.TabIndex = 6;
@@ -81,7 +84,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(1051, 515);
+            this.btnDelete.Location = new System.Drawing.Point(848, 13);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(148, 63);
             this.btnDelete.TabIndex = 7;
@@ -91,7 +94,7 @@
             // 
             // dtp_MegjelenesEv
             // 
-            this.dtp_MegjelenesEv.Location = new System.Drawing.Point(6, 475);
+            this.dtp_MegjelenesEv.Location = new System.Drawing.Point(593, 241);
             this.dtp_MegjelenesEv.Name = "dtp_MegjelenesEv";
             this.dtp_MegjelenesEv.Size = new System.Drawing.Size(326, 22);
             this.dtp_MegjelenesEv.TabIndex = 8;
@@ -99,7 +102,7 @@
             // cbSzin
             // 
             this.cbSzin.FormattingEnabled = true;
-            this.cbSzin.Location = new System.Drawing.Point(701, 440);
+            this.cbSzin.Location = new System.Drawing.Point(593, 138);
             this.cbSzin.Name = "cbSzin";
             this.cbSzin.Size = new System.Drawing.Size(305, 24);
             this.cbSzin.TabIndex = 9;
@@ -107,7 +110,7 @@
             // 
             // tbSorszam
             // 
-            this.tbSorszam.Location = new System.Drawing.Point(12, 408);
+            this.tbSorszam.Location = new System.Drawing.Point(593, 82);
             this.tbSorszam.Name = "tbSorszam";
             this.tbSorszam.Size = new System.Drawing.Size(320, 22);
             this.tbSorszam.TabIndex = 11;
@@ -116,7 +119,7 @@
             // 
             // tbMarka
             // 
-            this.tbMarka.Location = new System.Drawing.Point(701, 410);
+            this.tbMarka.Location = new System.Drawing.Point(593, 173);
             this.tbMarka.Name = "tbMarka";
             this.tbMarka.Size = new System.Drawing.Size(320, 22);
             this.tbMarka.TabIndex = 12;
@@ -124,7 +127,7 @@
             // 
             // tbTipus
             // 
-            this.tbTipus.Location = new System.Drawing.Point(338, 440);
+            this.tbTipus.Location = new System.Drawing.Point(593, 279);
             this.tbTipus.Name = "tbTipus";
             this.tbTipus.Size = new System.Drawing.Size(320, 22);
             this.tbTipus.TabIndex = 13;
@@ -139,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1271, 603);
+            this.ClientSize = new System.Drawing.Size(1194, 328);
             this.Controls.Add(this.tbTipus);
             this.Controls.Add(this.tbMarka);
             this.Controls.Add(this.tbSorszam);
